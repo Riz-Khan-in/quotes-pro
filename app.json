@@ -1,29 +1,54 @@
 {
   "expo": {
-    "name": "quotes-pro",
+    
+    "name": "QuotesPro",
     "slug": "quotes-pro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+
+        "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+
+    "updates": { "fallbackToCacheTimeout": 0 },
+    "assetBundlePatterns": ["**/*"],
+
+    
+    "platforms": ["android", "web"],
+    "sdkVersion": "49.0.0",
+
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.yourorg.quotespro",
+      "versionCode": 1,
+      "permissions": [],
+      "config": {
+        "googleSignIn": {
+          "certificateHash": "YOUR_SHA1_FINGERPRINT"
+        }
+      }
     },
+
+    
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+
+    
+    "extra": {
+    
+      "firebaseApiKey":            "AIzaSyAMeH75dgk94qqU7ICPzdfqIUEnhhPo_eg",
+      "firebaseAuthDomain":        "status-pro1.firebaseapp.com",
+      "firebaseProjectId":         "status-pro1",
+      "firebaseStorageBucket":     "status-pro1.firebasestorage.app",
+      "firebaseMessagingSenderId": "334815118616",
+      "firebaseAppId":             "1:334815118616:web:9d40bded1a1bc5e8504a6d",
+      "firebaseMeasurementId":     "G-725GKW9EV6",
+
+      
+      "stripePublishableKey":      "pk_test_YOUR_PUBLISHABLE_KEY"
     }
   }
 }
