@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# React Native iOS/Android builds
+android/
+ios/
+
+# Firebase config / environment
+.env
+.env.*.local
+
+# Expo web build output
+web-build/
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
